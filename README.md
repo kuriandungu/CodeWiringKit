@@ -1,4 +1,18 @@
-# CodeWiringKit
+# CodeWiringKit - Show AI your Mental Model
+You may find this useful.
+I created this because I was frustrated with AI's inability to see my code the way I do in my mind. figured that if I could get it to see what happens in runtime, then I open the key or all pages in my app and do something , then it can 
+see the data flow and next time I ask it to debug something it knows the connections.
+So I tried it out and it seems to work, pretty well actually. In one of my android projects I have a page that is used for 3 different purposes, simply by hiding some feature and exposing others. each go through a different pipeline and all this is determined
+by server settings that update on each sync.  After doing this wiring , Claude was able to now know that any changes to that page had to consider all the 3 scenarios and it stopped blindly changing code for just one path.
+
+so basically all this is in Alpha or Pre alpha (hehe). Claude will do the wiring logs and then you run your app and open all the pages and do something within them. then you copy paste the logs and give them to Claude and it then creates 
+a wiring diagram. Thereafter I include a summarized version of this in the my startup sequence so that claude is aware. for gritty bugs I tell it to read the wiring.md file then I go ahead and do the bug fixes
+
+I'm hoping someone can extend all this to work for other platforms. web etc
+
+
+
+
 
 **See your app's runtime wiring — then hand it to AI.**
 
